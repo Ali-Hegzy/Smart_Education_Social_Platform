@@ -1,0 +1,8 @@
+/node_modules
+
+/public/css
+/public/js
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+database.db
