@@ -1,17 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const db = require('../config/db');
 const jwt = require('jsonwebtoken');
 const bycrypt = require('bcrypt');
 const checkAuth = require('../middleware/auth');
+const User = require('../Models/User');
 require('dotenv').config();
 
-
 router.post('/login', checkAuth, (req, res) => {
-    const stmt = db.prepare(`
-            SELECT name FROM users WHERE id = ?
-        `);
-    const {name} = stmt.get(req.verify.id);
+    const {name} = User.find(req.verify.id);
 
     res.json(`Hello ${name}`);
 });
@@ -22,9 +18,7 @@ router.post('/register', (req, res) => {
 
     let bPass = bycrypt.hashSync(password, 10);
 
-    const stmt = db.prepare(`INSERT INTO users (name, email, password) VALUES (?, ?, ?)`);
-
-    const {lastInsertRowid} = stmt.run(name, email, bPass);
+    const {lastInsertRowid} = User.create({name, email, password : bPass});
 
     const payload = {
         id : lastInsertRowid,
