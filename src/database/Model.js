@@ -40,6 +40,7 @@ class Model {
 
         this.prepares = [];
         this.wheres = [];
+        this.stmt = '';
 
         return res;
     }
@@ -57,6 +58,7 @@ class Model {
 
         this.prepares = [];
         this.wheres = [];
+        this.stmt = '';
 
         return result;
     }
@@ -73,6 +75,7 @@ class Model {
         const result = temp.run(this.prepares);
 
         this.prepares = [];
+        this.stmt = '';
 
         return result;
     }
@@ -89,6 +92,7 @@ class Model {
         const result = temp.run(this.prepares);
 
         this.prepares = [];
+        this.stmt = '';
 
         return result;
     }
@@ -102,6 +106,7 @@ class Model {
         const result = temp.run(this.prepares);
 
         this.prepares = [];
+        this.stmt = '';
 
         return result;
     }
