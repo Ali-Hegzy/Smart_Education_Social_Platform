@@ -1,0 +1,143 @@
+[
+    {
+        "text": "How to implement custom authentication middleware in Express.js"
+    },
+    {
+        "text": "Understanding memory allocation and pointers using malloc and free in C"
+    },
+    { "text": "Configuring database connection pooling in PostgreSQL" },
+    {
+        "text": "Building reactive user interfaces using Tailwind CSS and Blade components"
+    },
+    { "text": "Writing efficient database migrations and seeders in Laravel" },
+    {
+        "text": "Handling asynchronous operations with Promises and async await in JavaScript"
+    },
+    { "text": "Optimizing SQL query performance using composite indexes" },
+    {
+        "text": "Containerizing a full-stack Node.js application using Docker and Docker Compose"
+    },
+    {
+        "text": "Implementing binary search tree traversal algorithms in Python"
+    },
+    { "text": "Configuring reverse proxy and SSL certificates with Nginx" },
+    {
+        "text": "Managing state transitions in React using hooks and context API"
+    },
+    {
+        "text": "Preventing SQL injection and cross-site scripting XSS attacks in web apps"
+    },
+    {
+        "text": "Debugging memory leaks in long-running Node.js background processes"
+    },
+    {
+        "text": "Designing a normalized relational schema for an e-commerce platform"
+    },
+    {
+        "text": "Creating circular buffer data structures for real-time data streaming"
+    },
+    {
+        "text": "Configuring Git workflows with feature branches and pull request reviews"
+    },
+    {
+        "text": "Understanding the JavaScript call stack, microtask queue, and event loop"
+    },
+    { "text": "Writing unit tests for RESTful APIs using Jest and Supertest" },
+    {
+        "text": "Implementing vector similarity search using cosine distance in SQLite"
+    },
+    {
+        "text": "Building a rate-limiting middleware using Redis and token bucket algorithm"
+    },
+    {
+        "text": "Configuring Vite for fast frontend asset bundling and hot module replacement"
+    },
+    {
+        "text": "Understanding dynamic array resizing and amortized time complexity"
+    },
+    {
+        "text": "Setting up continuous integration pipelines with GitHub Actions"
+    },
+    {
+        "text": "Securing web endpoints using JSON Web Tokens and refresh token rotation"
+    },
+    {
+        "text": "Parsing and validating incoming JSON payloads using Zod schema validation"
+    },
+    {
+        "text": "Managing terminal raw mode and escape sequences using termios in C"
+    },
+    { "text": "Writing custom Eloquent model observers and events in PHP" },
+    {
+        "text": "Implementing graph traversal algorithms using breadth-first search"
+    },
+    {
+        "text": "Configuring CORS policies and custom headers in backend servers"
+    },
+    {
+        "text": "Handling file uploads securely with multipart form data in Express"
+    },
+    {
+        "text": "Comparing relational database indexing strategies B-tree vs Hash index"
+    },
+    {
+        "text": "Building reusable web components with custom elements and shadow DOM"
+    },
+    {
+        "text": "Implementing OAuth2 authorization code flow for third-party login"
+    },
+    {
+        "text": "Optimizing Docker image layers to reduce build time and storage size"
+    },
+    {
+        "text": "Understanding variable scope, hoisting, and closures in modern JavaScript"
+    },
+    {
+        "text": "Configuring Linux server permissions using chmod, chown, and systemd services"
+    },
+    {
+        "text": "Implementing WebSocket servers for real-time bidirectional messaging"
+    },
+    {
+        "text": "Resolving Git merge conflicts and interactive rebase workflows"
+    },
+    {
+        "text": "Structuring scalable microservices architecture with message brokers"
+    },
+    {
+        "text": "Using ONNX runtime to execute machine learning models in JavaScript"
+    },
+    {
+        "text": "Implementing pagination using cursor-based keyset pagination in SQL"
+    },
+    {
+        "text": "Analyzing algorithmic time and space complexity using Big O notation"
+    },
+    {
+        "text": "Managing environment variables securely across staging and production"
+    },
+    { "text": "Building custom CLI tools using Node.js and process arguments" },
+    {
+        "text": "Implementing classical encryption and decryption algorithms like Caesar cipher"
+    },
+    {
+        "text": "Configuring caching strategies with Redis to minimize database read latency"
+    },
+    {
+        "text": "Understanding HTTP status codes and REST API design best practices"
+    },
+    {
+        "text": "Handling database deadlocks and concurrency control using transactions"
+    },
+    { "text": "Extracting text embeddings locally using transformer models" },
+    { "text": "Automating database schema backups and point-in-time recovery" },
+    {
+        "text": "Compiling shared libraries and linking object files using GCC and Makefiles"
+    },
+    {
+        "text": "Implementing web accessibility standards WCAG and semantic HTML elements"
+    },
+    {
+        "text": "Sorting algorithms and divide and conquer partitioning techniques in computer science"
+    }
+]

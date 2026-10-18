@@ -1,0 +1,402 @@
+[
+    {
+        "text": "Implementing database transactions with ACID guarantees in PostgreSQL",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for brewing pour-over coffee with balanced acidity",
+        "isTech": false
+    },
+    {
+        "text": "Configuring Redis cache TTL and invalidation policies in Node.js",
+        "isTech": true
+    },
+    {
+        "text": "Mastering the architecture of personal habit formation",
+        "isTech": false
+    },
+    {
+        "text": "Writing custom middleware for request logging in Express.js",
+        "isTech": true
+    },
+    {
+        "text": "How to calibrate espresso grind size for dark roast beans",
+        "isTech": false
+    },
+    {
+        "text": "Understanding memory fragmentation and virtual memory paging in operating systems",
+        "isTech": true
+    },
+    {
+        "text": "Guide to pruning fruit trees during the winter dormancy period",
+        "isTech": false
+    },
+    {
+        "text": "Handling race conditions with optimistic locking in relational databases",
+        "isTech": true
+    },
+    {
+        "text": "Developing a sustainable framework for personal budget allocation",
+        "isTech": false
+    },
+    {
+        "text": "Implementing a min-heap priority queue in modern C++",
+        "isTech": true
+    },
+    {
+        "text": "Core exercises to relieve lumbar spine stiffness and lower back pain",
+        "isTech": false
+    },
+    {
+        "text": "Configuring Docker multi-stage builds to optimize image footprints",
+        "isTech": true
+    },
+    {
+        "text": "The psychological impact of screen time on adolescent attention spans",
+        "isTech": false
+    },
+    {
+        "text": "Deploying zero-downtime rolling updates with Kubernetes deployments",
+        "isTech": true
+    },
+    {
+        "text": "Tips for indoor gardening with low-light succulent arrangements",
+        "isTech": false
+    },
+    {
+        "text": "Implementing binary search on rotated sorted arrays with logarithmic complexity",
+        "isTech": true
+    },
+    {
+        "text": "How to repair a broken mechanical wall clock pendulum",
+        "isTech": false
+    },
+    {
+        "text": "Setting up CSRF tokens and secure cookie flags for session management",
+        "isTech": true
+    },
+    {
+        "text": "Historical overview of Gothic cathedral flying buttresses and arches",
+        "isTech": false
+    },
+    {
+        "text": "Building a real-time collaborative whiteboard using WebSockets and Canvas API",
+        "isTech": true
+    },
+    {
+        "text": "Effective negotiation strategies for resolving residential rental disputes",
+        "isTech": false
+    },
+    {
+        "text": "Analyzing call stack execution contexts and closure scopes in JavaScript",
+        "isTech": true
+    },
+    {
+        "text": "How to troubleshoot a squeaky mountain bike disc brake rotor",
+        "isTech": false
+    },
+    {
+        "text": "Designing normalized third-normal-form database tables for inventory management",
+        "isTech": true
+    },
+    {
+        "text": "Understanding economic inflation indicators and consumer price indices",
+        "isTech": false
+    },
+    {
+        "text": "Implementing OAuth2 authorization code grant flow with PKCE extension",
+        "isTech": true
+    },
+    {
+        "text": "Step-by-step instructions for installing laminate hardwood flooring",
+        "isTech": false
+    },
+    {
+        "text": "Profiling CPU usage and identifying event loop bottlenecks in Node.js",
+        "isTech": true
+    },
+    {
+        "text": "A beginner guide to watercolor color harmony and wet-on-wet shading",
+        "isTech": false
+    },
+    {
+        "text": "Implementing Dijkstra algorithm for shortest path search in weighted graphs",
+        "isTech": true
+    },
+    {
+        "text": "How to train an adopted shelter dog to walk without pulling the leash",
+        "isTech": false
+    },
+    {
+        "text": "Writing custom validation schemas using Zod for incoming API bodies",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for maintaining mental resilience during long-distance marathons",
+        "isTech": false
+    },
+    {
+        "text": "Setting up an Nginx reverse proxy with SSL termination and gzip compression",
+        "isTech": true
+    },
+    {
+        "text": "A historical analysis of diplomatic treaties in eighteenth-century Europe",
+        "isTech": false
+    },
+    {
+        "text": "Configuring Git pre-commit hooks using Husky to run linters automatically",
+        "isTech": true
+    },
+    {
+        "text": "How to ferment homemade kimchi with traditional Korean spices",
+        "isTech": false
+    },
+    {
+        "text": "Implementing depth-first search for topological sorting of dependency graphs",
+        "isTech": true
+    },
+    {
+        "text": "Mindfulness breathing exercises to reduce workplace performance anxiety",
+        "isTech": false
+    },
+    {
+        "text": "Preventing cross-site request forgery and header injection in REST services",
+        "isTech": true
+    },
+    {
+        "text": "Choosing the correct running shoe cushion profile for high arches",
+        "isTech": false
+    },
+    {
+        "text": "Managing database connection leaks by setting proper pool maximum timeouts",
+        "isTech": true
+    },
+    {
+        "text": "Tips for organizing kitchen spice cabinets using tiered shelf inserts",
+        "isTech": false
+    },
+    {
+        "text": "Implementing JWT revocation strategies with Redis blacklists",
+        "isTech": true
+    },
+    {
+        "text": "How to master the syntax of classic English sonnet poetry",
+        "isTech": false
+    },
+    {
+        "text": "Building a pub-sub architecture using Redis streams and consumer groups",
+        "isTech": true
+    },
+    {
+        "text": "Beginner guide to pottery throwing techniques on a potter wheel",
+        "isTech": false
+    },
+    {
+        "text": "Compiling C source files into shared object libraries using GCC flags",
+        "isTech": true
+    },
+    {
+        "text": "The evolution of orchestral woodwind instruments in symphonic music",
+        "isTech": false
+    },
+    {
+        "text": "Implementing dynamic programming memoization for the unbounded knapsack problem",
+        "isTech": true
+    },
+    {
+        "text": "How to eliminate fruit flies from kitchen compost bins naturally",
+        "isTech": false
+    },
+    {
+        "text": "Setting up Prometheus metrics scraping for backend HTTP request durations",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for writing engaging dialogue in fiction screenplays",
+        "isTech": false
+    },
+    {
+        "text": "Building accessible web forms complying with WCAG 2.1 AA standards",
+        "isTech": true
+    },
+    {
+        "text": "Understanding blood pressure systolic and diastolic measurement ranges",
+        "isTech": false
+    },
+    {
+        "text": "Handling socket reconnections and heartbeat pings in WebSocket clients",
+        "isTech": true
+    },
+    {
+        "text": "How to prepare fertile garden soil using organic compost amendments",
+        "isTech": false
+    },
+    {
+        "text": "Writing idempotent database migrations to avoid partial execution failures",
+        "isTech": true
+    },
+    {
+        "text": "A travel itinerary for touring scenic coastal fishing villages in Norway",
+        "isTech": false
+    },
+    {
+        "text": "Implementing a thread-safe circular queue with mutex locks in C",
+        "isTech": true
+    },
+    {
+        "text": "The blueprint for mastering emotional self-regulation and focus",
+        "isTech": false
+    },
+    {
+        "text": "Using EXPLAIN ANALYZE to identify sequential scans in PostgreSQL queries",
+        "isTech": true
+    },
+    {
+        "text": "How to descale a residential water heater tank to remove mineral scale",
+        "isTech": false
+    },
+    {
+        "text": "Managing environment configurations across staging clusters using Dotenv vaults",
+        "isTech": true
+    },
+    {
+        "text": "Strategies for learning conversational Italian language grammar rules",
+        "isTech": false
+    },
+    {
+        "text": "Configuring rate limiting on Express routes using a sliding-window counter",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for carving mortise and tenon joints in oak carpentry",
+        "isTech": false
+    },
+    {
+        "text": "Writing custom Bash deployment scripts with strict error exit traps",
+        "isTech": true
+    },
+    {
+        "text": "Understanding how central bank interest rate decisions affect mortgages",
+        "isTech": false
+    },
+    {
+        "text": "Implementing vector embeddings search using cosine similarity in SQLite",
+        "isTech": true
+    },
+    {
+        "text": "How to season and care for cast iron cooking skillets properly",
+        "isTech": false
+    },
+    {
+        "text": "Configuring Content Security Policy headers to mitigate inline script attacks",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for mastering landscape photography composition rules",
+        "isTech": false
+    },
+    {
+        "text": "Handling file stream buffering and backpressure in Node.js piping",
+        "isTech": true
+    },
+    {
+        "text": "How to repair drywall holes using adhesive mesh patches and spackle",
+        "isTech": false
+    },
+    {
+        "text": "Implementing quicksort partitioning with median-of-three pivot selection",
+        "isTech": true
+    },
+    {
+        "text": "The biological rhythm of sleep cycles and melatonin synthesis",
+        "isTech": false
+    },
+    {
+        "text": "Setting up automated SSL certificate renewal using Certbot and Let's Encrypt",
+        "isTech": true
+    },
+    {
+        "text": "How to design a functional walk-in closet organizing layout",
+        "isTech": false
+    },
+    {
+        "text": "Preventing memory leaks caused by uncleaned event listeners in DOM elements",
+        "isTech": true
+    },
+    {
+        "text": "Step-by-step recipe for making artisan French croissants from scratch",
+        "isTech": false
+    },
+    {
+        "text": "Implementing distributed locks using Redis Redlock algorithm",
+        "isTech": true
+    },
+    {
+        "text": "Tips for improving speech articulation and vocal projection in public",
+        "isTech": false
+    },
+    {
+        "text": "Writing comprehensive integration tests for authentication endpoints",
+        "isTech": true
+    },
+    {
+        "text": "How to identify nutritional deficiencies in domestic citrus trees",
+        "isTech": false
+    },
+    {
+        "text": "Configuring Docker container resource limits for CPU and memory usage",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for creating realistic graphite portrait pencil drawings",
+        "isTech": false
+    },
+    {
+        "text": "Implementing auto-reconnection backoff logic in real-time chat clients",
+        "isTech": true
+    },
+    {
+        "text": "Understanding maritime trade routes across the Mediterranean in antiquity",
+        "isTech": false
+    },
+    {
+        "text": "Parsing multipart request streams to upload files directly to cloud buckets",
+        "isTech": true
+    },
+    {
+        "text": "A daily protocol for desk workers to avoid spinal compression",
+        "isTech": false
+    },
+    {
+        "text": "Implementing trie data structures for fast autocomplete prefix matching",
+        "isTech": true
+    },
+    {
+        "text": "How to choose a reliable backpacking tent for high-altitude weather",
+        "isTech": false
+    },
+    {
+        "text": "Setting up health check endpoints and readiness probes in Express servers",
+        "isTech": true
+    },
+    {
+        "text": "Methods for preventing rust formation on outdoor steel garden furniture",
+        "isTech": false
+    },
+    {
+        "text": "Configuring database read replicas to distribute heavy analytics workloads",
+        "isTech": true
+    },
+    {
+        "text": "How to make homemade fruit jams without adding commercial pectin",
+        "isTech": false
+    },
+    {
+        "text": "Implementing HMAC signatures to verify incoming payment webhook payloads",
+        "isTech": true
+    },
+    {
+        "text": "Techniques for calming an anxious cat during residential moves",
+        "isTech": false
+    }
+]
