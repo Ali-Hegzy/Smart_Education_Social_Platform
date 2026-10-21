@@ -32,12 +32,12 @@ let temp = null;
 const threshold = 0.29372557;
 
 const semanticCheck = async (req, res, next) => {
-    const desc = await getEmbedding(req.body);
+    const desc = await getEmbedding(req.body.description);
 
     for (let i = 0; i < refEmbedeed.length; i++) {
         let score = CosineSimilarity(desc, refEmbedeed[i]);
 
-        if (j === 0) {
+        if (i === 0) {
             temp = score;
         } else {
             if (score > temp) {
@@ -48,8 +48,8 @@ const semanticCheck = async (req, res, next) => {
 
     if (temp < threshold) {
         return res.status(400).json({
-            error: "Semcantic check Failed",
-            message: "You post description is not a technical related",
+            error: "Semantic check Failed",
+            message: "Your post description is not a technical related",
         });
     }
 
