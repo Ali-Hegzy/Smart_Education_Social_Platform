@@ -31,7 +31,7 @@ for (let i = 0; i < techRef.length; i++) {
 let temp = null;
 const threshold = 0.29372557;
 
-const semanticCheck = async (req, res, next) => {
+const semanticDescCheck = async (req, res, next) => {
     const desc = await getEmbedding(req.body.description);
 
     for (let i = 0; i < refEmbedeed.length; i++) {
@@ -56,4 +56,29 @@ const semanticCheck = async (req, res, next) => {
     next();
 };
 
-export { checkSchema, semanticCheck };
+const semanticTitleCheck = async (req, res, next) => {
+    const desc = await getEmbedding(req.body.title);
+
+    for (let i = 0; i < refEmbedeed.length; i++) {
+        let score = CosineSimilarity(desc, refEmbedeed[i]);
+
+        if (i === 0) {
+            temp = score;
+        } else {
+            if (score > temp) {
+                temp = score;
+            }
+        }
+    }
+
+    if (temp < threshold) {
+        return res.status(400).json({
+            error: "Semantic check Failed",
+            message: "Your post title is not a technical related",
+        });
+    }
+
+    next();
+};
+
+export { checkSchema, semanticDescCheck, semanticTitleCheck };
