@@ -3,7 +3,7 @@ import testCases from "../../test/fixtures/similarity-benchmark/test.json" with 
 import {
     CosineSimilarity,
     getEmbedding,
-} from "../services/pipeline.service.mjs";
+} from "../services/pipeline.service.js";
 
 let refEmbedeed = [];
 for (let i = 0; i < techRef.length; i++) {
@@ -31,7 +31,12 @@ for (let i = 0; i < testCases.length; i++) {
         }
     }
 
-    result.push({text : testCases[i].text , max: tempMax, min: tempMin, isTech: testCases[i].isTech });
+    result.push({
+        text: testCases[i].text,
+        max: tempMax,
+        min: tempMin,
+        isTech: testCases[i].isTech,
+    });
 }
 const tempTech = result.filter((e) => e.isTech);
 const tempNonTech = result.filter((e) => !e.isTech);

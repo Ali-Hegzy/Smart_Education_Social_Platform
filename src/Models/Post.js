@@ -1,7 +1,7 @@
-const Model = require("../database/Model");
+import Model from "../database/Model.js";
 
 class Post extends Model{
     static table = 'posts';
 }
 
-module.exports = Post;
+export default Post;

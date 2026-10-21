@@ -1,9 +1,9 @@
-const express = require('express')
+import express, { json } from 'express';
 const app = express();
-const auth = require('./routes/auth.route');
-const post = require('./routes/post.route');
+import auth from './routes/auth.route.js';
+import post from './routes/post.route.js';
 
-app.use(express.json());
+app.use(json());
 
 app.use(auth);
 
@@ -13,4 +13,4 @@ app.get('/health', (req, res)=>{
     res.json('Server is working');
 });
 
-module.exports = app;
+export default app;

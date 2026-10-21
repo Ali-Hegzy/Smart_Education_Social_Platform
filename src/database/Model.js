@@ -1,6 +1,7 @@
+import {db} from "../config/db.js";
 class Model {
+    static db = db;
     static table = "";
-    static db = require("../config/db");
     static stmt = "";
     static prepares = [];
     static wheres = [];
@@ -112,4 +113,4 @@ class Model {
     }
 }
 
-module.exports = Model;
+export default Model;

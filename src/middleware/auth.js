@@ -1,5 +1,7 @@
-const jwt = require('jsonwebtoken');
-require('dotenv').config();
+import pkg from 'jsonwebtoken';
+const { verify: _verify } = pkg;
+import dotenv from 'dotenv';
+dotenv.config();
 
 const SK = process.env.JWT_SK;
 
@@ -7,7 +9,7 @@ const checkAuth = (req, res, next) => {
     try{
         const temp = (req.headers.authorization).split(' ')[1];
     
-        const verify = jwt.verify(temp, SK);
+        const verify = _verify(temp, SK);
     
         req.verify = verify;
 
@@ -17,4 +19,4 @@ const checkAuth = (req, res, next) => {
     }
 }
 
-module.exports = { checkAuth };
+export { checkAuth };

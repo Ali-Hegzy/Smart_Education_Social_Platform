@@ -1,4 +1,4 @@
-const Post = require("../Models/Post");
+import Post from "../Models/Post.js";
 
 function index(req, res) {
     const posts = Post.select().all();
@@ -17,4 +17,4 @@ function store(req, res) {
     return res.json({ message: "Post created successfully", info: post });
 }
 
-module.exports = { index, store };
+export { index, store };

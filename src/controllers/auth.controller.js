@@ -1,7 +1,9 @@
-const jwt = require("jsonwebtoken");
-const bycrypt = require("bcrypt");
-const User = require("../Models/User");
-require("dotenv").config();
+import pkg from "jsonwebtoken";
+const { sign } = pkg;
+import { compareSync, hashSync } from "bcrypt";
+import User from "../Models/User.js";
+import dotenv from 'dotenv';
+dotenv.config();
 
 const SK = process.env.JWT_SK;
 
@@ -15,7 +17,7 @@ function login(req, res) {
             return res.json({ message: "Email or password is incorrect" });
         }
 
-        const isMatch = bycrypt.compareSync(req.body.password, user.password);
+        const isMatch = compareSync(req.body.password, user.password);
 
         if (!isMatch) {
             return res.json({ message: "Email or password is incorrect" });
@@ -26,7 +28,7 @@ function login(req, res) {
             email: req.body.email,
         };
 
-        const token = jwt.sign(payload, SK, { expiresIn: "2h" });
+        const token = sign(payload, SK, { expiresIn: "2h" });
 
         return res.json({ token });
     } catch (error) {
@@ -37,7 +39,7 @@ function login(req, res) {
 function register(req, res) {
     const { name, email, password } = req.body;
 
-    let bPass = bycrypt.hashSync(password, 10);
+    let bPass = hashSync(password, 10);
 
     const { lastInsertRowid } = User.create({ name, email, password: bPass });
 
@@ -46,9 +48,9 @@ function register(req, res) {
         email: email,
     };
 
-    const token = jwt.sign(payload, SK, { expiresIn: "2h" });
+    const token = sign(payload, SK, { expiresIn: "2h" });
 
     res.json(token);
 }
 
-module.exports = { login, register };
+export { login, register };

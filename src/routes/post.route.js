@@ -1,10 +1,10 @@
-const express = require("express");
-const router = express.Router();
-const { index, store } = require("../controllers/post.controller");
-const { checkSchema } = require("../middleware/post");
-const { checkAuth } = require("../middleware/auth");
+import { Router } from "express";
+const router = Router();
+import { index, store } from "../controllers/post.controller.js";
+import { checkSchema } from "../middleware/post.js";
+import { checkAuth } from "../middleware/auth.js";
 
 router.get("/", index);
 router.post("/store", [checkSchema, checkAuth], store);
 
-module.exports = router;
+export default router;
