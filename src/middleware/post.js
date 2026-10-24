@@ -28,57 +28,56 @@ let refEmbedeed = [];
 for (let i = 0; i < techRef.length; i++) {
     refEmbedeed[i] = await getEmbedding(techRef[i].text);
 }
-let temp = null;
-const threshold = 0.29372557;
+const THRESHOLD = 0.29372557;
 
-const semanticDescCheck = async (req, res, next) => {
-    const desc = await getEmbedding(req.body.description);
-
-    for (let i = 0; i < refEmbedeed.length; i++) {
-        let score = CosineSimilarity(desc, refEmbedeed[i]);
-
-        if (i === 0) {
-            temp = score;
-        } else {
-            if (score > temp) {
-                temp = score;
+function semanticCheck(contentKey, message) {
+    return async (req, res, next) => {
+        try {
+            if (!req.body || !req.body[contentKey]) {
+                const devError = new Error(
+                    `Developer Error: Missing key '${contentKey}' in request body`,
+                );
+                devError.status = 400;
+                return next(devError);
             }
-        }
-    }
 
-    if (temp < threshold) {
-        return res.status(400).json({
-            error: "Semantic check Failed",
-            message: "Your post description is not a technical related",
-        });
-    }
+            let temp = null;
+            const content = await getEmbedding(req.body[contentKey]);
 
-    next();
-};
+            for (let i = 0; i < refEmbedeed.length; i++) {
+                let score = CosineSimilarity(content, refEmbedeed[i]);
 
-const semanticTitleCheck = async (req, res, next) => {
-    const desc = await getEmbedding(req.body.title);
-
-    for (let i = 0; i < refEmbedeed.length; i++) {
-        let score = CosineSimilarity(desc, refEmbedeed[i]);
-
-        if (i === 0) {
-            temp = score;
-        } else {
-            if (score > temp) {
-                temp = score;
+                if (i === 0) {
+                    temp = score;
+                } else {
+                    if (score > temp) {
+                        temp = score;
+                    }
+                }
             }
+
+            if (temp < THRESHOLD) {
+                return res.status(400).json({
+                    error: "Semantic check Failed",
+                    message,
+                });
+            }
+
+            next();
+        } catch (error) {
+            next(error);
         }
-    }
+    };
+}
 
-    if (temp < threshold) {
-        return res.status(400).json({
-            error: "Semantic check Failed",
-            message: "Your post title is not a technical related",
-        });
-    }
+const semanticDescCheck = semanticCheck(
+    "description",
+    "Your post description is not a technical related",
+);
 
-    next();
-};
+const semanticTitleCheck = semanticCheck(
+    "title",
+    "Your post title is not a technical related",
+);
 
 export { checkSchema, semanticDescCheck, semanticTitleCheck };
